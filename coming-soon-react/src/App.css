@@ -1,0 +1,121 @@
+
+.container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #17132e, #40245c);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.content {
+  max-width: 700px;
+  width: 100%;
+}
+
+.content h1 {
+  font-size: 55px;
+  margin-bottom: 15px;
+  color: #ffb86c;
+}
+
+.description {
+  font-size: 18px;
+  margin-bottom: 35px;
+  color: #ddd;
+}
+
+.content h2 {
+  margin-bottom: 20px;
+}
+
+.countdown {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 35px;
+  flex-wrap: wrap;
+}
+
+.time-box {
+  background-color: #ffffff;
+  color: #40245c;
+  padding: 20px;
+  border-radius: 10px;
+  min-width: 110px;
+}
+
+.time-box h2 {
+  font-size: 35px;
+  margin-bottom: 5px;
+}
+
+.time-box p {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+input {
+  padding: 14px;
+  width: 280px;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+button {
+  padding: 14px 25px;
+  background-color: #ffb86c;
+  color: #17132e;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ffa94d;
+}
+
+.message {
+  margin-top: 20px;
+  color: #ffcf99;
+}
+
+@media (max-width: 600px) {
+  .content h1 {
+    font-size: 38px;
+  }
+
+  .description {
+    font-size: 15px;
+  }
+
+  .time-box {
+    min-width: 90px;
+    padding: 15px;
+  }
+
+  .time-box h2 {
+    font-size: 25px;
+  }
+
+  form {
+    flex-direction: column;
+  }
+
+  input,
+  button {
+    width: 100%;
+  }
+}

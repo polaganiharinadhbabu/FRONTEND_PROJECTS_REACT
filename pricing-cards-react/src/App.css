@@ -1,0 +1,178 @@
+
+.pricing-container {
+  width: 100%;
+  max-width: 1150px;
+  margin: auto;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: #263238;
+  margin-bottom: 10px;
+}
+
+header p {
+  color: #777;
+  margin-bottom: 25px;
+}
+
+.billing-toggle {
+  display: inline-flex;
+  background: #e8eee5;
+  padding: 5px;
+  border-radius: 30px;
+  margin-bottom: 35px;
+}
+
+.billing-toggle button {
+  border: none;
+  background: transparent;
+  padding: 11px 25px;
+  border-radius: 25px;
+  cursor: pointer;
+  color: #526e1b;
+  font-weight: 600;
+}
+
+.billing-toggle button.active {
+  background: #6b8e23;
+  color: white;
+}
+
+.pricing-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+  align-items: stretch;
+}
+
+.pricing-card {
+  position: relative;
+  background: white;
+  padding: 35px 25px;
+  border-radius: 15px;
+  border: 1px solid #e2e8df;
+  text-align: center;
+}
+
+.pricing-card.popular {
+  border: 2px solid #6b8e23;
+  transform: translateY(-8px);
+}
+
+.popular-label {
+  display: inline-block;
+  background: #6b8e23;
+  color: white;
+  padding: 7px 15px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  margin-bottom: 18px;
+}
+
+.pricing-card h2 {
+  color: #263238;
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+}
+
+.description {
+  color: #777;
+  font-size: 0.9rem;
+  min-height: 22px;
+}
+
+.price {
+  margin: 25px 0;
+  color: #263238;
+}
+
+.currency {
+  font-size: 1.3rem;
+  vertical-align: top;
+}
+
+.amount {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.period {
+  color: #777;
+  font-size: 0.9rem;
+}
+
+.features {
+  list-style: none;
+  text-align: left;
+  margin: 25px 0;
+}
+
+.features li {
+  padding: 12px 0;
+  border-bottom: 1px solid #eee;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.check {
+  color: #6b8e23;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.choose-btn {
+  width: 100%;
+  padding: 13px;
+  background: #6b8e23;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.choose-btn:hover {
+  background: #526e1b;
+}
+
+.selection-message {
+  display: inline-flex;
+  align-items: center;
+  gap: 15px;
+  background: #e8f5e9;
+  color: #256029;
+  padding: 14px 20px;
+  border-radius: 8px;
+  margin-top: 25px;
+}
+
+.selection-message button {
+  border: none;
+  background: transparent;
+  font-size: 1.3rem;
+  cursor: pointer;
+  color: #256029;
+}
+
+@media (max-width: 850px) {
+  .pricing-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .pricing-card.popular {
+    transform: none;
+  }
+}
+
+@media (max-width: 550px) {
+  .pricing-cards {
+    grid-template-columns: 1fr;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+}

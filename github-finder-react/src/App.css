@@ -1,0 +1,159 @@
+
+.app {
+  width: 100%;
+  max-width: 750px;
+  margin: auto;
+}
+
+.container {
+  background: white;
+  padding: 35px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+h1 {
+  color: #24292f;
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  color: #777;
+  margin-bottom: 25px;
+}
+
+.search-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.search-form input {
+  flex: 1;
+  min-width: 0;
+  padding: 13px;
+  border: 1px solid #ccc;
+  border-radius: 7px;
+  font-size: 1rem;
+}
+
+.search-form button {
+  padding: 13px 22px;
+  border: none;
+  border-radius: 7px;
+  background: #24292f;
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.search-form button:hover {
+  background: #444;
+}
+
+.search-form button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.profile-card {
+  margin-top: 25px;
+  padding: 25px;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+}
+
+.avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.profile-card h2 {
+  color: #24292f;
+  margin-bottom: 6px;
+}
+
+.username {
+  color: #0969da;
+  text-decoration: none;
+}
+
+.bio {
+  color: #555;
+  margin: 15px 0;
+}
+
+.location {
+  color: #777;
+  margin-bottom: 20px;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin: 25px 0;
+}
+
+.stats div {
+  background: #f3f4f6;
+  padding: 15px 5px;
+  border-radius: 8px;
+}
+
+.stats h3 {
+  color: #24292f;
+  font-size: 1.4rem;
+}
+
+.stats p {
+  color: #666;
+  font-size: 0.85rem;
+  margin-top: 5px;
+}
+
+.profile-link {
+  display: inline-block;
+  background: #238636;
+  color: white;
+  text-decoration: none;
+  padding: 12px 20px;
+  border-radius: 7px;
+  margin-top: 5px;
+}
+
+.profile-link:hover {
+  background: #196c2e;
+}
+
+.error {
+  color: #dc2626;
+  margin: 15px 0;
+}
+
+.loading {
+  color: #555;
+  margin: 20px 0;
+}
+
+@media (max-width: 500px) {
+  .container {
+    padding: 20px;
+  }
+
+  .search-form {
+    flex-direction: column;
+  }
+
+  .stats {
+    gap: 5px;
+  }
+
+  .stats p {
+    font-size: 0.75rem;
+  }
+}

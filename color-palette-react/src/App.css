@@ -1,0 +1,106 @@
+
+.app {
+  min-height: 100vh;
+  padding: 40px 20px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+header h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+header p {
+  color: #666;
+}
+
+.palette {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 15px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.color-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.color-box {
+  height: 300px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding: 12px;
+}
+
+.lock-btn {
+  background: white;
+  border: none;
+  border-radius: 6px;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.color-info {
+  padding: 15px;
+  text-align: center;
+}
+
+.color-info h3 {
+  font-size: 17px;
+  margin-bottom: 12px;
+}
+
+.copy-btn {
+  padding: 8px 18px;
+  border: none;
+  background: #222;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.generate-btn {
+  display: block;
+  margin: 40px auto 15px;
+  padding: 14px 30px;
+  background: #222;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.generate-btn:hover {
+  background: #444;
+}
+
+.hint {
+  text-align: center;
+  color: #777;
+}
+
+@media (max-width: 800px) {
+  .palette {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .color-box {
+    height: 200px;
+  }
+}
+
+@media (max-width: 450px) {
+  .palette {
+    grid-template-columns: 1fr;
+  }
+}
